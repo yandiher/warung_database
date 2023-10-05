@@ -24,7 +24,7 @@ barcode = input('please insert barcode> ')
 box = input('please insert how many box you buy> ')
 price_per_box = input('please insert price per box> ')
 
-query = f"INSERT INTO product_stock (barcode, box, product_in, price_per_box) values ({barcode}, {box}, now(), {price_per_box});"
+query = f"INSERT INTO buy (barcode, box, product_in, price_per_box) values ({barcode}, {box}, now(), {price_per_box});"
 
 def execute_query(connection=connection, query=query):
     cursor = connection.cursor()

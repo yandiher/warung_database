@@ -25,7 +25,7 @@ product_name = input('please insert product name> ')
 price_per_item = input('please insert price per unit> ')
 product_item = input('please insert amount of item per box> ')
 
-query = f"INSERT INTO product_lookup values ({barcode}, '{product_name}', {price_per_item}, {product_item});"
+query = f"INSERT INTO lookup values ({barcode}, '{product_name}', {price_per_item}, {product_item});"
 
 def execute_query(connection=connection, query=query):
     cursor = connection.cursor()

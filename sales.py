@@ -37,5 +37,5 @@ while code != 'Exit':
     if code == 'Exit':
         code = 'Exit'
     else:
-        query = f"INSERT INTO product_sales (barcode, time_sale) values ({code}, now());"
+        query = f"INSERT INTO sales (barcode, time_sales) values ({code}, now());"
         execute_query(connection=connection, query=query)

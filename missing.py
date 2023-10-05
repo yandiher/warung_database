@@ -21,9 +21,9 @@ def create_connection():
 connection = create_connection()
 
 barcode = input('please insert barcode> ')
-product_item = input('please insert amount of item per box> ')
+product_item = input('please insert amount of missing product> ')
 
-query = f"INSERT INTO product_missing (barcode, product_item, date_of_knowing) values ({barcode}, {product_item}, now());"
+query = f"INSERT INTO missing (barcode, product_item, date_of_knowing) values ({barcode}, {product_item}, now());"
 
 def execute_query(connection=connection, query=query):
     cursor = connection.cursor()
