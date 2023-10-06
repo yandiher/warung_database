@@ -20,7 +20,13 @@ def create_connection():
 
 connection = create_connection()
 
-def execute_query(connection, query):
+barcode = input('please insert barcode> ')
+box = input('please insert how many box you buy> ')
+price_per_box = input('please insert price per box> ')
+
+query = f"INSERT INTO buy (barcode, box, product_in, price_per_box) values ({barcode}, {box}, now(), {price_per_box});"
+
+def execute_query(connection=connection, query=query):
     cursor = connection.cursor()
     try:
         cursor.execute(query)
@@ -29,13 +35,4 @@ def execute_query(connection, query):
     except Error as err:
         print(f"Error: '{err}")
 
-code = None
-
-while code != 'Exit':
-    code = input('please insert barcode> ')
-
-    if code == 'Exit':
-        code = 'Exit'
-    else:
-        query = f"INSERT INTO sales (barcode, time_sales) values ({code}, now());"
-        execute_query(connection=connection, query=query)
+execute_query()
