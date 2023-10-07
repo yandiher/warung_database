@@ -1,4 +1,4 @@
-# SQL AND PYHTHON FOR SMALL SHOP
+# SQL AND PYTHON FOR SMALL SHOP
 
 ![Database design for warung](warung.png)
 
@@ -22,7 +22,7 @@ I create table _lookup_ to store the detail of every product. Then I create othe
 5. Open _buy.py_ when you buy product for stock.
 6. Open _sales.py_ when the shop open. It will record the transaction all the day until you type _Exit_.
 7. When someone buys a product two pieces, you have to scan it twice.
-8. _Missing.py_ is used better on the last day of the month when you are about to do Inventory take.
+8. A _missing.py_ is used better on the last day of the month when you are about to do Inventory take.
 
 ## IMPROVEMENT
 
