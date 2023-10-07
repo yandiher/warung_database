@@ -1,5 +1,7 @@
 # SQL AND PYHTHON FOR SMALL SHOP
 
+![Database design for warung](warung.png)
+
 ## BACKGROUND
 
 This project is inspired from the foundation where I study English. There is a small shop and a lot of students buy food and drinks in a break time. I found the problem that they felt difficult to find the profit from the business.
